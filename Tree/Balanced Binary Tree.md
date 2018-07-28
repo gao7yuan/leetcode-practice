@@ -80,8 +80,8 @@ class Solution {
   - Tree concepts:
     - The **depth** of a node is the number of edges from the node to the tree's **root** node. A root node will have a depth of 0.
     - The **height** of a node is the number of edges on the longest path from the node to a **leaf**. A leaf node will have a height of 0.
-    ![depth_and_height](/Images/Depth and height of tree.png)
-
+    
+    ![depth_height](/images/depth-height-tree.png)
   - Only need to visit each node for once, **O(n)**.  
 ```
 public boolean isBalanced(TreeNode root) {
