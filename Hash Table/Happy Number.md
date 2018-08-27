@@ -18,6 +18,7 @@ Explanation:
 
 ## Attempts
 * Use a set to keep track of numbers that have already reached.
+
 ```
 public boolean isHappy(int n) {
     int cur = n;
