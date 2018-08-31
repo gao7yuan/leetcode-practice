@@ -43,7 +43,7 @@ public boolean isPalindrome(ListNode head) {
     return true;
 }
 ```
-* Two pointers
+* Two pointers (需要自己implement一下)
   - fast runner moves 2 times faster than slow runner.
   - when fast runner reaches end, slow runner is at mid point.
   - reverse the list from mid point.
