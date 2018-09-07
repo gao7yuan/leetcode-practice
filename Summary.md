@@ -12,7 +12,7 @@
 
 * 求一个BT的depth：recursion - 左右孩子的depth的最大值加一。
 
-* [110. Balanced Binary Tree](/Tree/Balanced\ Binary\ Tree.md)
+* [110. Balanced Binary Tree](/Tree/Balanced&#32Binary&#32Tree.md)
   - Top-down: 左右孩子的depth差小于一，并且左右孩子都是balanced (slow)
   - Bottom-up: 累积计算node的height，如果左右孩子height差大于一返回-1，否则返回该node的height。检测root的height是否为-1 (fast)
 * [107. Binary Tree Level Order Traversal II](/Tree/Binary Tree Level Order Traversal II.md)
