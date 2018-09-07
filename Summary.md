@@ -12,7 +12,7 @@
 
 * 求一个BT的depth：recursion - 左右孩子的depth的最大值加一。
 
-* [110. Balanced Binary Tree](/Tree/Balanced Binary Tree.md)
+* [110. Balanced Binary Tree](/Tree/Balanced\ Binary\ Tree.md)
   - Top-down: 左右孩子的depth差小于一，并且左右孩子都是balanced (slow)
   - Bottom-up: 累积计算node的height，如果左右孩子height差大于一返回-1，否则返回该node的height。检测root的height是否为-1 (fast)
 * [107. Binary Tree Level Order Traversal II](/Tree/Binary Tree Level Order Traversal II.md)
@@ -21,7 +21,7 @@ BFS: 分层加入list的head
 Recursion & divide and conquer. 取中间值给node，对左后孩子分别在array的左右半边取中间值循环操作。注意边界条件。helper method处理index
 * [226. Invert binary tree](/Tree/Invert binary tree.md)
 Recursion, DFS, 先交换左右node，再在左右上recursively call.
-* [257. Binary Tree Paths](/Tree/Binary Tree Paths.md)
+* [257: Binary Tree Paths](/Tree/Binary Tree Paths.md)
 DFS: 用helper method储存已经遍历过的path和已经形成的list
 * [538. Convert BST to Greater Tree](/Tree/Convert BST to Greater Tree.md)
 Reverse in-order traversal, use a sum as accumulator.
