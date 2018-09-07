@@ -1,5 +1,5 @@
 # 108. Convert Sorted Array to Binary Search Tree
-*Easy*
+*Easy* *二刷*
 09/04/18
 
 Given an array where elements are sorted in ascending order, convert it to a height balanced BST.

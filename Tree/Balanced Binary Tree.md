@@ -1,4 +1,5 @@
 # 110. Balanced Binary Tree
+*Easy* *二刷*
 7/28/18
 
 Given a binary tree, determine if it is height-balanced.
@@ -80,11 +81,10 @@ class Solution {
   - Tree concepts:
     - The **depth** of a node is the number of edges from the node to the tree's **root** node. A root node will have a depth of 0.
     - The **height** of a node is the number of edges on the longest path from the node to a **leaf**. A leaf node will have a height of 0.
-    ![depth_and_height]()
 
   - Only need to visit each node for once, **O(n)**.  
 ```
-public boolean isBalanced(TreeNode root) {
+    public boolean isBalanced(TreeNode root) {
         return dfsHeight(root) != -1;
     }
 

@@ -1,4 +1,5 @@
 # 606. Construct String From Binary Tree
+*Easy* *二刷* *忽略stack方法*
 7/31/18
 
 You need to construct a string consists of parenthesis and integers from a binary tree with the preorder traversing way.

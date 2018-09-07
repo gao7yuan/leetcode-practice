@@ -1,4 +1,5 @@
 # 226. Invert binary tree
+*Easy* *二刷*
 7/30/18
 
 Invert a binary tree.
