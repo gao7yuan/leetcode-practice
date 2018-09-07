@@ -15,25 +15,25 @@
 * [110. Balanced Binary Tree](/Tree/Balanced&#32;Binary&#32;Tree.md)
   - Top-down: 左右孩子的depth差小于一，并且左右孩子都是balanced (slow)
   - Bottom-up: 累积计算node的height，如果左右孩子height差大于一返回-1，否则返回该node的height。检测root的height是否为-1 (fast)
-* [107. Binary Tree Level Order Traversal II](/Tree/Binary Tree Level Order Traversal II.md)
+* [107. Binary Tree Level Order Traversal II](/Tree/Binary&#32;Tree&#32;Level&#32;Order&#32;Traversal II.md)
 BFS: 分层加入list的head
-* [108. Convert Sorted Array to Binary Search Tree](/Tree/Convert Sorted Array to Binary Search Tree.md)
+* [108. Convert Sorted Array to Binary Search Tree](/Tree/Convert&#32;Sorted&#32;Array&#32;to&#32;Binary&#32;Search&#32;Tree.md)
 Recursion & divide and conquer. 取中间值给node，对左后孩子分别在array的左右半边取中间值循环操作。注意边界条件。helper method处理index
-* [226. Invert binary tree](/Tree/Invert binary tree.md)
+* [226. Invert binary tree](/Tree/Invert&#32;Binary&#32;Tree.md)
 Recursion, DFS, 先交换左右node，再在左右上recursively call.
-* [257: Binary Tree Paths](/Tree/Binary Tree Paths.md)
+* [257: Binary Tree Paths](/Tree/Binary&#32;Tree&#32;Paths.md)
 DFS: 用helper method储存已经遍历过的path和已经形成的list
-* [538. Convert BST to Greater Tree](/Tree/Convert BST to Greater Tree.md)
+* [538. Convert BST to Greater Tree](/Tree/Convert&#32;BST&#32;to&#32;Greater&#32;Tree.md)
 Reverse in-order traversal, use a sum as accumulator.
-* [606. Construct String From Binary Tree](/Tree/Construct String From Binary Tree.md)
+* [606. Construct String From Binary Tree](/Tree/Construct&#32;String&#32;From&#32;Binary&#32;Tree.md)
   - Recursion: DFS
     - 左为空并且右不为空的时候加```()```
     - 有左：val->(->left->)
     - 有右：val->(->right->)
     - 无左有右：val->()->...
-* [637. Average of Levels in Binary Tree](/Tree/Average of Levels in Binary Tree.md)
+* [637. Average of Levels in Binary Tree](/Tree/Average&#32;of&#32;Levels&#32;in&#32;Binary&#32;Tree.md)
   - DFS: 两个list sum和count分别记录每一层，```average(node, i, sum, count)```更新两个list
   - BFS: 用temp queue或者```queue.size()```分层记录```sum/count```
-* [872. Leaf Similar Trees](/Tree/Leaf Similar Trees.md)
+* [872. Leaf Similar Trees](/Tree/Leaf&#32;Similar&#32;Trees.md)
   - 先用DFS建立list of leaves再比较两个list，O(n) time and space(?)
   - Stack: ```int stack(Stack<TreeNode> s)```返回每个leaf的值，一个一个比较leaf，一旦不一样就返回false。节省空间。O(logn) space (why?)
