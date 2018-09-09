@@ -1,4 +1,5 @@
 # 404. Sum of Left Leaves
+*Easy* *二刷*
 08/24/18
 
 Find the sum of all left leaves in a given binary tree.

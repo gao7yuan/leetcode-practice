@@ -1,4 +1,5 @@
 # 590. N-ary Tree Postorder Traversal
+*Easy* *二刷*
 8/1/18
 
 Given an n-ary tree, return the postorder traversal of its nodes' values.

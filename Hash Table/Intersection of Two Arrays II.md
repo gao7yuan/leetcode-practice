@@ -1,4 +1,5 @@
 # 350. Intersection of Two Arrays II
+*Easy*
 08/27/18
 
 Given two arrays, write a function to compute their intersection.

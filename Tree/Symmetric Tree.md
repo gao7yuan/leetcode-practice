@@ -1,5 +1,5 @@
 # 101. Symmetric Tree
-*Easy*
+*Easy* *二刷*
 08/31/18
 
 Given a binary tree, check whether it is a mirror of itself (ie, symmetric around its center).

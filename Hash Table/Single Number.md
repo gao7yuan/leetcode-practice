@@ -1,4 +1,5 @@
 # 136. Single Number
+*Easy*
 08/26/18
 
 Given a non-empty array of integers, every element appears twice except for one. Find that single one.

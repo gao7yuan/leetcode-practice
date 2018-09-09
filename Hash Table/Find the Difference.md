@@ -1,4 +1,5 @@
 # 389. Find the Difference
+*Easy*
 08/27/18
 
 Given two strings s and t which consist of only lowercase letters.

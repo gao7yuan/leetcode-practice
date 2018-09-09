@@ -1,4 +1,5 @@
-669. Trim a binary search tree
+# 669. Trim a Binary Search Tree
+*Easy* *二刷*
 7/29/18
 
 Given a binary search tree and the lowest and highest boundaries as L and R, trim the tree so that all its elements lies in [L, R] (R >= L). You might need to change the root of the tree, so the result should return the new root of the trimmed binary search tree.

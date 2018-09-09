@@ -1,4 +1,5 @@
-# 559. Maximum depth of N-ary tree
+# 559. Maximum Depth of N-ary Tree
+*Easy* *二刷*
 7/30/18
 
 Given a n-ary tree, find its maximum depth.

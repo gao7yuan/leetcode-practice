@@ -1,4 +1,5 @@
 # 217. Contains Duplicate
+*Easy*
 08/26/18
 
 Given an array of integers, find if the array contains any duplicates.

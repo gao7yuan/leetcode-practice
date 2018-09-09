@@ -1,4 +1,5 @@
 # 205. Isomorphic Strings
+*Easy*
 08/24/18
 
 Given two strings **s** and **t**, determine if they are isomorphic.

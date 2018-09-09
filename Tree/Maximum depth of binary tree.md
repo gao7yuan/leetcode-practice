@@ -1,4 +1,5 @@
-# 104. Maximum depth of binary tree
+# 104. Maximum Depth of Binary Tree
+*Easy* *二刷*
 7/30/18
 
 Given a binary tree, find its maximum depth.

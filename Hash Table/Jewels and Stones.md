@@ -1,4 +1,5 @@
 # 771. Jewels and Stones
+*Easy*
 08/24/18
 
 You're given strings ```J``` representing the types of stones that are jewels, and ```S``` representing the stones you have.  Each character in ```S``` is a type of stone you have.  You want to know how many of the stones you have are also jewels.
@@ -47,4 +48,4 @@ public int numJewelsInStones(String J, String S) {
 }
 ```
 * Typical的方法和我一样，note:
-```char j: J.toCharArray()```
+```char j : J.toCharArray()```
