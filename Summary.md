@@ -6,7 +6,7 @@ set - 如果含有这个数字则删除，如果不含有则加入，最后剩�
 用set记录已经访问过的number
 * [204. Count Primes](/Hash&#32;Table/Count&#32;Primes.md)
 用array of booleans代表是否是prime，如果某index的值是prime，count加一。同时更新这个index所有的multiples都不是prime。
-* [205. Isomorphic Strings](/Hash Table/205. Isomorphic Strings.md)
+* [205. Isomorphic Strings](/Hash&#32;Table/Isomorphic&#32;Strings.md)
 use arrays as hashtables记录char第一次出现的位置。如果对应的index值不一样就return false。
 * [217. Contains Duplicate](/Hash&#32;Table/Contains&#32;Duplicate.md)
   - sort (eg. heapsort) O(nlogn) time O(1) space
