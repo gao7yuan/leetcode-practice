@@ -1,4 +1,5 @@
 # 69. Sqrt(x)
+*Easy*
 08/27/18
 
 Implement int sqrt(int x).

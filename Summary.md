@@ -1,3 +1,20 @@
+## Binary Search
+
+* [69. Sqrt(x)](/Binary&#32;Search/Sqrt(x%29.md)
+binary search, 某一个数的平方小于给定值而后一个平方大于的时候return
+* [167. Two Sum II - Input array is sorted](/Binary&#32;Search/Two&#32;Sum&#32;II&#32;-&#32;Input&#32;Array&#32;is&#32;Sorted.md)
+binary search,两边逼近。
+* [278. First Bad Version](/Binary&#32;Search/First&#32;Bad&#32;Version.md)
+binary search， 注意边界值。可以用类似69题的方法：某个是坏而前一个是好的时候return
+* [367. Valid Perfect Square](/Binary Search/367. Valid Perfect Square.md)
+类似sqrt(x)
+* [374. Guess Number Higher or Lower](/Binary&#32;Search/Guess&#32;Number&#32;Higher&#32;or&#32;Lower.md)
+binary search
+* [441. Arranging Coins](/Binary&#32;Search/Arranging&#32;Coins.md)
+binary search, 1+2+3+...+k = k(k+1)/2
+* [704. Binary Search](/Binary&#32;Search/Binary&#32;Search.md)
+binary search.
+
 ## Hash Table
 
 * [136. Single Number](/Hash&#32;Table/Single&#32;Number.md)
