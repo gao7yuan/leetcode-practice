@@ -1,4 +1,5 @@
 # 1. Two Sum
+*Easy*
 8/2/18
 
 Given an array of integers, return indices of the two numbers such that they add up to a specific target.
