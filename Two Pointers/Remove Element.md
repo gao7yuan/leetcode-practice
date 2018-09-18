@@ -1,4 +1,5 @@
 # 27. Remove Element
+*Easy*
 08/29/18
 
 Given an array nums and a value val, remove all instances of that value in-place and return the new length.

@@ -1,5 +1,5 @@
 # 141. Linked List Cycle
-Easy
+*Easy*
 08/29/18
 
 Given a linked list, determine if it has a cycle in it.

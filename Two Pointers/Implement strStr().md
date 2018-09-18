@@ -1,4 +1,5 @@
 # 28. Implement strStr()
+*Easy*
 08/29/18
 
 Implement strStr().
