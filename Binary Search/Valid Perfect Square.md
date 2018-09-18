@@ -1,5 +1,5 @@
 # 367. Valid Perfect Square
-*Easy*
+*Easy* *已整理*
 08/28/18
 
 Given a positive integer num, write a function which returns True if num is a perfect square else False.

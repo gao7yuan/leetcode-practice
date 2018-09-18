@@ -1,5 +1,5 @@
 # 257. Binary Tree Paths
-*Easy* *二刷*
+*Easy* *二刷* *已整理*
 09/05/18
 
 Given a binary tree, return all root-to-leaf paths.

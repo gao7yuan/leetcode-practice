@@ -1,5 +1,5 @@
 # 653. Two-sum IV - input is a BST
-*Easy* *二刷*
+*Easy* *二刷* *已整理*
 7/30/18
 
 Given a Binary Search Tree and a target number, return true if there exist two elements in the BST such that their sum is equal to the given target.

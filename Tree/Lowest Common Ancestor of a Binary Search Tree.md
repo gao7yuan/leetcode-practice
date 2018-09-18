@@ -1,5 +1,5 @@
 # 235. Lowest Common Ancestor of a Binary Search Tree
-*Easy* *二刷*
+*Easy* *二刷* *已整理*
 09/05/18
 
 Given a binary search tree (BST), find the lowest common ancestor (LCA) of two given nodes in the BST.

@@ -1,5 +1,5 @@
 # 538. Convert BST to Greater Tree
-*Easy* *二刷* *只看了recursion*
+*Easy* *二刷* *只看了recursion* *已整理*
 08/23/18
 
 Given a Binary Search Tree (BST), convert it to a Greater Tree such that every key of the original BST is changed to the original key plus sum of all keys greater than the original key in BST.

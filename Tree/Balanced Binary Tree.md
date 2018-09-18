@@ -1,5 +1,5 @@
 # 110. Balanced Binary Tree
-*Easy* *二刷*
+*Easy* *二刷* *已整理*
 7/28/18
 
 Given a binary tree, determine if it is height-balanced.

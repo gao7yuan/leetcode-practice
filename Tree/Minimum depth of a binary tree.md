@@ -1,5 +1,5 @@
 # 111. Minimum Depth of a Binary Tree
-*Easy* *二刷*
+*Easy* *二刷* *已整理*
 7/28/18
 
 Given a binary tree, find its minimum depth.

@@ -1,5 +1,5 @@
 # 202. Happy Number
-*Easy*
+*Easy* *已整理*
 08/24/18
 
 Write an algorithm to determine if a number is "happy".

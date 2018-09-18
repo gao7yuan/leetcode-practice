@@ -1,5 +1,5 @@
 # 112. Path Sum
-*Easy* *二刷*
+*Easy* *二刷* *已整理*
 09/05/18
 
 Given a binary tree and a sum, determine if the tree has a root-to-leaf path such that adding up all the values along the path equals the given sum.

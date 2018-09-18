@@ -1,5 +1,5 @@
 # 389. Find the Difference
-*Easy*
+*Easy* *已整理*
 08/27/18
 
 Given two strings s and t which consist of only lowercase letters.

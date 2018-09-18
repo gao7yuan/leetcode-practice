@@ -1,5 +1,5 @@
 # 242. Valid Anagram
-*Easy*
+*Easy* *已整理*
 08/26/18
 
 Given two strings s and t , write a function to determine if t is an anagram of s.

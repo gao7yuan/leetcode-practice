@@ -1,5 +1,5 @@
 # 290. Word Pattern
-*Easy*
+*Easy* *已整理*
 
 Given a pattern and a string str, find if str follows the same pattern.
 

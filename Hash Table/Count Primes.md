@@ -1,5 +1,5 @@
 # 204. Count Primes
-*Easy*
+*Easy* *已整理*
 08/24/18
 
 Count the number of prime numbers less than a non-negative number, n.

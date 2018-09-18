@@ -1,5 +1,5 @@
 # 374. Guess Number Higher or Lower
-*Easy*
+*Easy* *已整理*
 08/28/18
 
 We are playing the Guess Game. The game is as follows:

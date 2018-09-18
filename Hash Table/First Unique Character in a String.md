@@ -1,5 +1,5 @@
 # 387. First Unique Character in a String
-*Easy*
+*Easy* *已整理*
 08/27/18
 
 Given a string, find the first non-repeating character in it and return it's index. If it doesn't exist, return -1.
