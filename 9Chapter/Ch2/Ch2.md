@@ -22,3 +22,7 @@ Given an sorted integer array - nums, and an integer - target. Find the any/firs
   - 针对非常大的start和end，防止int溢出
 3. A[mid] ==, >, <
 4. A[start] A[end] ? target
+
+## 用二分法做的问题
+* first/last
+* O(n) -> O(lgn)
