@@ -26,3 +26,11 @@ Given an sorted integer array - nums, and an integer - target. Find the any/firs
 ## 用二分法做的问题
 * first/last
 * O(n) -> O(lgn)
+
+## reverse O(1) space O(n) time
+template:
+```
+for (int start = 0, int end = n - 1; start < end; start++, end--) {
+  swap(A[start], A[end]);
+}
+```

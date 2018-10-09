@@ -1,5 +1,5 @@
 # 4. Median of Two Sorted Arrays
-*Hard*
+*Hard* *可以看九章*
 10/01/18
 
 There are two sorted arrays nums1 and nums2 of size m and n respectively.
