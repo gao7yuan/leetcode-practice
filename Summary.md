@@ -61,6 +61,30 @@ set记录Jewels, update count.
 
 * 求一个BT的depth：recursion - 左右孩子的depth的最大值加一。
 
+* In order traversal using a stack
+  - push all the way to the left
+  - root points to pop, visit pop
+  - root points to its right child
+```
+public List<Integer> inorderTraversal(TreeNode root) {
+    List<Integer> res = new ArrayList<>();
+    if (root == null) {
+        return res;
+    }
+    Stack<TreeNode> stack = new Stack<>();
+    while (root != null || !stack.isEmpty()) {
+        while (root != null) {
+            stack.push(root);
+            root = root.left;
+        }
+        root = stack.pop();
+        res.add(root.val);
+        root = root.right;
+    }
+    return res;
+}
+```
+
 * [100. Same Tree](/Tree/Same&#32;Tree.md)
 DFS
 * [101. Symmetric Tree](/Tree/Symmetric&#32;Tree.md)
