@@ -16,13 +16,14 @@ Output: 1
 ```
 
 ## Solutions
+* 基本思想：讲meeting按照开始时间排序，对于每一个meeting，如果有会议已结束，则重复利用该房间，否则创建新房间
 * Priority queues
   - sort the meetings according to start time.
   - before starting a meeting, check the top of the min heap consisting of end times to see if any room is available. If there is an available room, remove the top of the heap.
   - once a meeting has started, add the end time to the priority queue, which is a mean heap
   - in the end, check the size of the heap.
   - O(nlgn) time (sort and extract min), O(n) space (heap)
-```
+```Java
 public int minMeetingRooms(Interval[] intervals) {
     if (intervals.length == 0) {
         return 0;
@@ -57,7 +58,7 @@ public int minMeetingRooms(Interval[] intervals) {
   - create two arrays of the start and end time of meetings in increasing order.
   - go through the start times. if at that time any room is free, increment end time. otherwise add one meeting room.
   - O(nlgn) time (sort), O(n) space (arrays)
-```
+```Java
 public int minMeetingRooms(Interval[] intervals) {
     if (intervals == null || intervals.length == 0) {
         return 0;

@@ -58,7 +58,7 @@ public int[] twoSum(int[] nums, int target) {
 * One-pass Hash Table
   - While iterating the array, check whether its complement is in the hashtable.
   - Have to put complement's index before the original's index. Because num with smaller index is added to the hashtable first.
-  - O(1) time. O(1) space.
+  - O(n) time. O(n) space.
 ```
 public int[] twoSum(int[] nums, int target) {
     Hashtable<Integer, Integer> numsTable = new Hashtable<>();
@@ -70,5 +70,20 @@ public int[] twoSum(int[] nums, int target) {
         numsTable.put(nums[i], i);
     }
     throw new IllegalArgumentException("no two sum solution");
+}
+```
+
+* 二刷练习准备考试
+```
+public int[] twoSum(int[] nums, int target) {
+    Map<Integer, Integer> map = new HashMap<>();
+    for (int i = 0; i < nums.length; i++) {
+        int comp = target - nums[i];
+        if (map.containsKey(comp)) {
+            return new int[]{map.get(comp), i};
+        }
+        map.put(nums[i], i);
+    }
+    return new int[] {-1, -1};
 }
 ```

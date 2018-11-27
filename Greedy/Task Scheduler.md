@@ -35,12 +35,16 @@ public int leastInterval(char[] tasks, int n) {
     }
     Arrays.sort(map);
     int time = 0;
+    // while there is task left undone
     while (map[25] > 0) {
+        // from the task with highest frequency to next iteration, there are n + 1 tasks in total
         int i = 0;
         while (i <= n) {
+            // if all tasks are finished
             if (map[25] == 0) {
                 break;
             }
+            // if there is still available tasks, put the task on task line, otherwise idle
             if (i < 26 && map[25 - i] > 0) {
                 map[25 - i]--;
             }
