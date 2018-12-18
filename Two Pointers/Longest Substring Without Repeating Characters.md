@@ -26,7 +26,7 @@ Explanation: The answer is "wke", with the length of 3.
 ## Attempts
 * 类似下面#2的思路
   - O(n^2) time
-```
+```Java
 public int lengthOfLongestSubstring(String s) {
     if (s == null || s.length() == 0) {
         return 0;
@@ -53,8 +53,8 @@ public int lengthOfLongestSubstring(String s) {
     return max;
 }
 ```
-* 在看了下面#2的code之后略微改变了```max = Math.max(max, len);```的位置
-```
+* 在看了下面#2的code之后略微改变了`max = Math.max(max, len);`的位置
+```Java
 public int lengthOfLongestSubstring(String s) {
     if (s == null || s.length() == 0) {
         return 0;
@@ -91,7 +91,7 @@ public int lengthOfLongestSubstring(String s) {
 2. 检查每一个substring内部是否有重复，用hashset存放元素，遍历所有char
   - O(n)
 * 总共O(n^3) time,O(min(m,n)) space:当所有char都不一样的时候，stack的大小取决于string长度或者字符类型总数的最小值
-```
+```Java
 public int lengthOfLongestSubstring(String s) {
     int max = 0;
     for (int i = 0; i < s.length(); i++) {
@@ -121,7 +121,7 @@ boolean allUnique(String s, int start, int end) {
   - O(2n) = O(n) time for checking if a char is in a substring
 * A sliding window is an abstract concept commonly used in array/string problems.
 * By using hashset as a sliding window, reduce to O(1) to check one char
-```
+```Java
 public int lengthOfLongestSubstring(String s) {
     int n = s.length();
     Set<Character> set = new HashSet<>();
@@ -142,7 +142,7 @@ public int lengthOfLongestSubstring(String s) {
 ### 3. sliding window optimized
 * 用map记录每个char出现的位置，如果已出现则更新i的index。注意i的index是i和上一个j出现index+1之间的较大值。
 我的code：
-```
+```Java
 public int lengthOfLongestSubstring(String s) {
     if (s == null || s.length() == 0) {
         return 0;
