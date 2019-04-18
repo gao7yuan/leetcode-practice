@@ -1,6 +1,6 @@
 # 46. Permutations
 3/4/19
-*Medium*
+*Medium* *二刷的时候依然是个辣鸡*
 
 ## NOTE
 - Backtracking is an algorithm for finding all solutions by exploring all potential candidates. If the solution candidate turns to be not a solution (or at least not the last one), backtracking algorithm discards it by making some changes on the previous step, i.e. backtracks and then try again.
@@ -88,5 +88,38 @@ private void backtrack(int n, List<List<Integer>> output, ArrayList<Integer> num
         backtrack(n, output, nums, first + 1);
         Collections.swap(nums, first, i);
     }
+}
+```
+
+## 二刷的辣鸡
+- 重点理解步骤
+```Java
+public List<List<Integer>> permute(int[] nums) {
+    List<List<Integer>> res = new ArrayList<>();
+    backtrack(res, nums, 0);
+    return res;
+}
+
+private void backtrack(List<List<Integer>> list, int[] nums, int target) {
+    if (target == nums.length) {
+        List<Integer> toAdd = new ArrayList<>();
+        for (int num : nums) {
+            toAdd.add(num);
+        }
+        list.add(toAdd);
+    }
+
+    // swap target with all the following elements
+    for (int i = target; i < nums.length; i++) {
+        swap(nums, target, i);
+        backtrack(list, nums, target + 1);
+        swap(nums, target, i);
+    }
+}
+
+private void swap(int[] nums, int i, int j) {
+    int temp = nums[i];
+    nums[i] = nums[j];
+    nums[j] = temp;
 }
 ```
