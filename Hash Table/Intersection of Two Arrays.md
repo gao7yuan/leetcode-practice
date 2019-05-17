@@ -20,7 +20,7 @@ Each element in the result must be unique.
 The result can be in any order.
 
 ## Attempts
-```
+```Java
 public int[] intersection(int[] nums1, int[] nums2) {
         Set<Integer> numSet = new HashSet<>();
         Set<Integer> resSet = new HashSet<>();
@@ -48,7 +48,7 @@ public int[] intersection(int[] nums1, int[] nums2) {
   - O(n) time.
 * Sort both arrays, use two pointers.
   - O(nlogn) time.
-```
+```Java
 public class Solution {
     public int[] intersection(int[] nums1, int[] nums2) {
         Set<Integer> set = new HashSet<>();
@@ -78,7 +78,7 @@ public class Solution {
 ```
 * Binary search
   - O(nlogn) time.
-```
+```Java
 public class Solution {
     public int[] intersection(int[] nums1, int[] nums2) {
         Set<Integer> set = new HashSet<>();
