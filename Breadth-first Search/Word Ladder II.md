@@ -233,3 +233,85 @@ List<String> findNeighbors(String word, Set<String> dict) {
     return res;
 }
 ```
+
+- 5/21/19
+```Java
+Map<String, List<String>> graph;
+public List<List<String>> findLadders(String beginWord, String endWord, List<String> wordList) {
+    int n = beginWord.length();
+    makeGraph(n, wordList);
+    Map<String, Integer> distance = new HashMap<>();
+    int ladderlen = ladderLength(beginWord, endWord, graph, distance);
+    List<List<String>> res = new ArrayList<>();
+    if (ladderlen == 0) {
+        return res;
+    }
+    List<String> temp = new ArrayList<>();
+    dfs(beginWord, endWord, graph, temp, res, distance);
+    return res;
+}
+
+void dfs(String cur, String endWord, Map<String, List<String>> graph, List<String> temp, List<List<String>> res, Map<String, Integer> distance) {
+    temp.add(cur);
+    if (cur.equals(endWord)) {
+        res.add(new ArrayList<>(temp));
+    } else {
+        for (int i = 0; i < endWord.length(); i++) {
+            String generic = cur.substring(0, i) + "*" + cur.substring(i + 1, endWord.length());
+            if (graph.containsKey(generic)) {
+                List<String> neis = graph.get(generic);
+                for (String nei : neis) {
+                    if (distance.containsKey(nei) && distance.get(nei) == distance.get(cur) + 1) {
+                        // shortest distance
+                        dfs(nei, endWord, graph, temp, res, distance);
+                    }
+                }
+            }
+        }
+    }
+    temp.remove(temp.size() - 1);
+}
+
+void makeGraph(int n, List<String> wordList) {
+    graph = new HashMap<>();
+    for (String word : wordList) {
+        for (int i = 0; i < n; i++) {
+            String generic = word.substring(0, i) + "*" + word.substring(i + 1, n);
+            if (!graph.containsKey(generic)) {
+                graph.put(generic, new ArrayList<>());
+            }
+            graph.get(generic).add(word);
+        }
+    }
+}
+
+int ladderLength(String beginWord, String endWord, Map<String, List<String>> graph, Map<String, Integer> distance) {
+    int n = beginWord.length();
+    Queue<String> queue = new LinkedList<>();
+    Set<String> visited = new HashSet<>();
+    queue.offer(beginWord);
+    visited.add(beginWord);
+    distance.put(beginWord, 1);
+    while (!queue.isEmpty()) {
+        String word = queue.poll();
+        int dist = distance.get(word);
+        for (int i = 0; i < n; i++) {
+            String generic = word.substring(0, i) + "*" + word.substring(i + 1, n);
+            if (graph.containsKey(generic)) {
+                List<String> neis = graph.get(generic);
+                for (String nei : neis) {
+                    if (!visited.contains(nei)) {
+                        queue.offer(nei);
+                        visited.add(nei);
+                        distance.put(nei, dist + 1);
+                    }
+                    if (endWord.equals(nei)) {
+                        return dist + 1;
+                    }
+                }
+            }
+        }
+    }
+    return 0;
+}
+```

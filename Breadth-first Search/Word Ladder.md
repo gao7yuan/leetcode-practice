@@ -202,3 +202,54 @@ public int ladderLength(String beginWord, String endWord, List<String> wordList)
     return 0;
 }
 ```
+
+- 5/21/19
+```Java
+public int ladderLength(String beginWord, String endWord, List<String> wordList) {
+    int n = beginWord.length(); // word length
+    Map<String, List<String>> graph = new HashMap<>(); // generic word -> words
+    // add all words in word list to graph, matching with generic word
+    // O(kn) time. k = length, n = number of words.
+    for (String word : wordList) {
+        for (int i = 0; i < n; i++) {
+            String generic = word.substring(0, i) + "*" + word.substring(i + 1, n);
+            if (!graph.containsKey(generic)) {
+                graph.put(generic, new ArrayList<>());
+            }
+            graph.get(generic).add(word);
+        }
+    }
+
+    // space: O(n). n = # of words.
+    Queue<String> queue = new LinkedList<>();
+    Set<String> visited = new HashSet<>();
+    Map<String, Integer> distance = new HashMap<>();
+
+    queue.add(beginWord);
+    visited.add(beginWord);
+    distance.put(beginWord, 1);
+
+    while(!queue.isEmpty()) {
+        String word = queue.poll();
+        int dist = distance.get(word);
+        // find all neighbors by visiting all related generic words
+        for (int i = 0; i < n; i++) {
+            String generic = word.substring(0, i) + "*" + word.substring(i + 1, n);
+            if (graph.containsKey(generic)) {
+                List<String> neis = graph.get(generic);
+                for (String nei : neis) {
+                    if (nei.equals(endWord)) {
+                        return dist + 1;
+                    }
+                    if (!visited.contains(nei)) {
+                        visited.add(nei);
+                        queue.offer(nei);
+                        distance.put(nei, dist + 1);
+                    }     
+                }
+            }
+        }
+    }
+    return 0;
+}
+```
