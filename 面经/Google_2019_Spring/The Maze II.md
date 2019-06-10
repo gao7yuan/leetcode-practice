@@ -57,6 +57,8 @@ The maze contains at least 2 empty spaces, and both the width and height of the 
 
 ## Solutions
 - BFS
+  - use `int[][] distance` to store distance, init with `Integer.MAX_VALUE`
+  - if new distance smaller, update and push to queue
 
 - my code:
 ```Java

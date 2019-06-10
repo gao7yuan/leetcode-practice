@@ -1,4 +1,6 @@
+import java.util.Arrays;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 
 public class PaintBooleanMatrix {
@@ -25,6 +27,12 @@ public class PaintBooleanMatrix {
     dfs(graph, target, r + 1, c);
     dfs(graph, target, r, c - 1);
     dfs(graph, target, r, c + 1);
+  }
+
+  public static void main(String[] args) {
+    int[] arr = new int[]{1, 2, 4};
+    List<int[]> a = Arrays.asList(arr);
+    System.out.println(a.size());
   }
 
 }
