@@ -33,6 +33,8 @@ public class PaintBooleanMatrix {
     int[] arr = new int[]{1, 2, 4};
     List<int[]> a = Arrays.asList(arr);
     System.out.println(a.size());
+    String str = "a girl is a girl";
+    System.out.println(str.indexOf("girl", 2));
   }
 
 }
