@@ -305,3 +305,38 @@ Notice that `a/aa/aaa/file1.txt` is not the longest file path, if there is anoth
   - 缓冲区队列的逻辑
     - 队列为空时进队(read4)
     - 队列不为空时就满足内存需求，出队
+Tag: Goole Facebook
+考点
+- Queue
+- 细节处理
+- onsite, 25min
+
+# 例题总结
+## Missing ranges
+## Valid number
+- Corner case
+  - overflow maxint
+  - empty input
+  - out of boundary
+- 技巧
+  - 先写程序，再考虑corner case
+  - 长整型long解决溢出int
+  - 数组开大一点（加空格，dummy 0）
+## Moving avg from data stream
+- 快速求和
+  - 前缀和数组
+- 节省空间
+  - 链表or滚动
+- 写滚动的技巧
+  - 先写程序后加滚动
+
+# Practice
+- String to integer
+- One edit distance*
+- Merge intervals
+- Insert interval*
+- Strobogrammic number*
+- Interval sum?
+- Min stack （前缀和数组）
+- Valid Parentheses
+- Evaluate Reverse Polish Notation*
