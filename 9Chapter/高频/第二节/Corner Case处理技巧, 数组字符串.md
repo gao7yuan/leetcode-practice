@@ -304,3 +304,4 @@ Notice that `a/aa/aaa/file1.txt` is not the longest file path, if there is anoth
     - Queue (FIFO) 因为要保持数据顺序不变
   - 缓冲区队列的逻辑
     - 队列为空时进队(read4)
+    - 队列不为空时就满足内存需求，出队
