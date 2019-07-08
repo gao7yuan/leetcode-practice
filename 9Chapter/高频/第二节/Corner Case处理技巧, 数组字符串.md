@@ -1,5 +1,10 @@
 # Corner case处理技巧, 数组、字符串、栈与队列，快速点题
 
+前缀和数组
+- 数组a，s是它的前缀和数组
+  - a[i] + a[i+1] + ... + a[j] = s[j] - s[i-1]
+- 改滚动
+
 ## Missing Ranges
 
 Given a sorted integer array nums, where the range of elements are in the inclusive range [lower, upper], return its missing ranges.
